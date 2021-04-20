@@ -1,0 +1,20 @@
+{% extends 'blogs/navbar.html' %}
+{% load static %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Main Page</title>
+</head>
+<body>
+    <h1>My Blogs</h1>
+    {{ request.user }}
+        <a href="{% url 'blogs:addBlog'%}"><i class="far fa-plus-square"></i></a>
+</body>
+</html>
+
+
+{% endblock content %}

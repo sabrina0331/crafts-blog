@@ -1,0 +1,32 @@
+{% extends 'blogs/navbar.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Create your new ideas: {{ user }}</h1>
+<main class="mt-4 mb-5">
+    <div class="container">
+        <form>
+        <!-- Name input -->
+            <div class="form-outline m-4">
+                <input type="title" class="form-control" />
+                <label class="form-label" for="form4Example1">Title</label>
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="content"  class="form-control" />
+                <label class="form-label" for="form4Example2">Content</label>
+            </div>
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Text</label>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+                Publish
+            </button>
+        </form>
+    </div>
+</main>
+
+{% endblock content %}
